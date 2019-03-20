@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?rt=$1 [L,QSA]
+RewriteRule ^(Controllers(.*)\.php|Engine(.*)\.php|Conf(.*)\.php|Models(.*)\.php|Views(.*)\.php)(.*)$ 404.php [F,QSA]

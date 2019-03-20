@@ -1,0 +1,133 @@
+@todo - dorobienie widoku wyników badania
+@todo - edit standard, delete standard!!
+@todo - raporty - widok dzienny kalendarza, usuwanie zlecenia badania
+
+
+30.05.2015
+- dodanie probek i badan do widoku crm details oraz standard details
+- dorobienie widoku wyników badania
+
+29.05.2015
+- sprawdzanie czy krzywa uziarnienia miesci sie w krzywych granicznych!!!!
+- sprawdzenie czy badanie miesci sie w odchylkach od krzywej - zapis badania, zamkniecie zlecenia badania!!!!!!
+
+28.05.2015
+- widok listy zarejestrowanych badan
+- widok szczegolowy zlecenia badania
+- potwierdzanie probki
+- widok rejestracji badania probki
+
+26.05.2015
+- rejestrowanie zlecen badan dorobione sprawdzanie czy termin jest wolny
+- rejestrowanie odchylek badan w standardzie
+- widok listy zleconych badan
+- zaznaczenie na kalendarzu terminow i badan
+
+18.05.2015
+- zarzadzanie standardami - dodawanie standardu
+- zarzadzanie typami, opisami i kategoriami
+
+13.05.2015
+- modul crm - widok listy, dodawanie klientow, szczegoly klientow
+
+21.04.2015
+- przywracanie bazy danych z pliku
+- nie dziala!!!! transakcja....
+
+08.04.2015
+- ustawienie stalych ze sciezkami do widokow stron uprawnien i do czystych struktur baz modułów
+- generowanie listy uprawnień i pobieranie uprawnień do zaznaczenia na liście
+- lista uprawnień domyślnych
+
+04.04.2015
+- edycja, dodawanie i usuwanie grup. Dodany spinner w belkę powiadomienia o operacji zakończonej sukcesem (jeżeli istnieje przekierowanie).
+- dodane popovery do przycisków usuń w grupach i w nawigacji informujace dlaczego nie mozna usunac elementów
+
+26.03.2015
+- edycja, usuwanie linkow metoda hasChildren koniec modulu nawigacja, zablokowane usuwanie linkow ktore sa rodzicami oraz zabroniona jest ich zmiana pozycji
+
+25.03.2015
+- modul navigation, pobieranie listy linkow z bazy, wyswietlanie oraz rejestracja
+
+23.03.2015
+- klasa paginacja wzbogacona o metode render ktora generuje kod zrodlowy paginacji
+
+18.03.2015
+- klasa paginacja metody : __construct, share - dzielaca wejscie na paczki (dorobić), hasPage, getPage, checkNum, render (dorobić)
+
+16.03.2015
+- przerobiony model users pod klase form
+- zaktualizowana klasa form - poprawione metody + w validation.class.php metody checkEqual, prepareForQuery
+
+09.03.2015
+- klasa validation
+- klasa form
+
+03.03.2015
+- przeniesienie plików widoków bezpośrednio do katalogu Views i usunięcie pośrednich katalogów
+- zmiana nazwy metod setAlertWindow na setAlertPanel oraz isSetAlert na isSetAlertPanel
+- dorobienie metod setPromptWindow oraz isSetPromptWindow generujących okienka modal z twitterbootstrap
+
+11.12.2014
+- dodana do nagłówka funkcja dołączająca plik js w przypadku gdy taki plik istnieje dla danego widoku
+
+09.12.2014
+- dorobienie funkcji definiujacej okienko z alertem oraz funkcji sprawdzajacej czy alert jest zdefiniowanys view::setAlertWindow oraz view::isSetAlert
+
+09.11.2014
+- getTables export danych do pliku działa z metody z trzema opcjami parametrów
+
+22.10.2014
+- funkcja w database getTableList($skip) - pobiera listę tabel w bazie
+- zaczęta funkcja getTables($name) - ma pobierać strukture i dane z bazy lub ze wszystkich baz
+
+21.10.2014
+- rozdzielenie edycji na podgrupy (informacje, haslo, grupa)
+- rejestrowanie domyslnych uprawnień dla użytkowników podczas ich rejestracji
+- dodałem pobieranie nazw grupy za pomocą złączenia (JOIN)
+- zmiana w tabelach _rights_groups i _rigts_users - pola right_name zmieniłem na right_id
+- widok zarzadzania kopiami zapasowymi
+
+20.10.2014
+- edytowanie użytkownika
+
+16.10.2014
+- dodane ikonki do pól logowania
+- do tabeli _rights_set dodalem kolumnde default(ktora ma umozliwiac definiowanie domyslnych praw nadawanych nowym uzytkownikom bez grupy)
+- poprawiona metoda view::get() na wielopoziomowa (3) - do przegladania tablic
+- dodawanie uzytkownika
+- instrukcje warunkowe badajace poprawnosc pol formularzy (musze je zamknac w klase)
+
+14.10.2014
+- widok szczegołów użytkownika
+- dodanie miniatur kobiety i mężczyzny (na stałe mężczyzna, zmiana w module rozszerzonym)
+
+13.10.2014
+- widok listy użytkowników
+- pliki settings_pages beda prowadzic do listy dostepnych opcji modulu
+- wstepna metoda w klasie Permission->checkModule(); // czy tak może być? co tu poprawić?
+- plan nowego modułu Baz danych
+- dolaczenie bilbioteki jquery w Libs/jQuery
+- nowa tabela w bazie _database_info z polami na numer kopii zapasowej i date - bedzie przechowywac ostatnia przywrocona kopie
+
+30.09.2014
+- zmiany przy sprawdzaniu uprawnień
+- wprowadzenie uprawnień gościa (guest) dla użytkowników, którzy nie mają ich zdefiniowanych wcale
+- dołączanie plików przy wyborze modułu w ustawieniach
+- wyświetlanie linku do ustawień w zależności od tego czy użytkownik ma do niego dostęp
+
+27.09.2014
+- dodanie font awesome
+- dodanie ikonek do przyciskow zaloguj, wyloguj, ustawienia oraz do naglowka w ustawieniach
+
+11.09.2014
+- uprawnienia
+- lista modułów
+- poprawiona nawigacja
+- ustawienia
+- tabele w bazie danych
+
+02.09.2014
+- logowanie
+- sesje
+- poprawki w głownych kontrolerach

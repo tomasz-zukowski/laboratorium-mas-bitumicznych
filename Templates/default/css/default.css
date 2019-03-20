@@ -1,0 +1,31 @@
+/** Uprawnienia **/
+ul.rights {
+    list-style: none;
+}
+
+ul.rights ul {
+    list-style: none;
+}
+
+ul.rights ul > li > label {
+    font-weight: normal;
+}
+
+blockquote.source-code {
+    font-size: 11px;
+    font-family: "Courier New", Courier, monospace;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+blockquote.source-code.source-code150 {
+    max-height: 150px;
+}
+
+blockquote.source-code.source-code300 {
+    max-height: 300px;
+}
+
+blockquote.source-code.source-code600 {
+    max-height: 600px;
+}

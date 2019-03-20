@@ -1,0 +1,1 @@
+Pliki z "czystymi" zrzutami struktur i podstawowych danych dla danego modułu

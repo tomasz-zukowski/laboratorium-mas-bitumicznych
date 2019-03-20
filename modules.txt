@@ -1,0 +1,11 @@
+Moduły podstawowe (wymagane) :
+- errors
+- database
+- home
+- users
+- modules
+- permissions (!)
+- navigation (!)
+
+Moduły dodatkowe :
+- extended_users
